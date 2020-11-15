@@ -1,0 +1,52 @@
+body { 
+    display: grid; 
+    grid-template-areas: 
+      "header header header" 
+      "nav article ads" 
+      "footer footer footer"; 
+    grid-template-rows: 1fr 1fr 60px; 
+    grid-template-columns: 200px 1fr 200px; 
+    grid-gap: 1px; 
+    height: 100vh; 
+    margin: 0; 
+    } 
+ul{ 
+        display: grid; 
+        grid-template-areas: 
+          "li li li li li li"; 
+        grid-template-rows: 1fr; 
+        grid-gap: 1px; 
+        margin: 0; 
+    } 
+
+  Header, footer, article, nav, div { 
+    padding: 15px; 
+    background: rgb(247, 232, 151); 
+  } 
+  #PageHeader { 
+    grid-area: header; 
+  } 
+  #PageFooter { 
+    grid-area: footer; 
+  } 
+  #MainArticle { 
+    grid-area: article;      
+  }
+  #MainNav {
+    grid-area: nav; 
+    } 
+  #SiteAds { 
+    grid-area: ads; 
+    } 
+
+/* header.container {
+    display: grid;
+    grid-template-rows: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 60% 1fr;
+  }
+  #grid > div {
+    font-size: 30px;
+    padding: .5em;
+    background: green;
+    text-align: center;
+  } */
